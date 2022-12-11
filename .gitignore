@@ -1,5 +1,7 @@
-/Temp
-/Logs
-/Library/ShaderCache/*
-/Library/StateCache/*
-/Library/PackageCache/*
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*/.vscode
+!*/Assets
