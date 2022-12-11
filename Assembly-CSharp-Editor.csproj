@@ -36,15 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Git\GitData.cs" />
+     <Compile Include="Assets\NotInvited\VersionFromGitLite\Scripts\Editor\Settings\GitVersionMenu.cs" />
      <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Utils\CustomLog.cs" />
      <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Git\GitUtils.cs" />
-     <Compile Include="Assets\NotInvited\VersionFromGitLite\Scripts\Editor\Settings\GitVersionMenu.cs" />
+     <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Git\GitData.cs" />
      <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\AutomaticVersionOnBuild.cs" />
-     <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Settings\VersionFromGitSettings.cs" />
-     <Compile Include="Assets\NotInvited\VersionFromGitLite\Scripts\Editor\Settings\VersionFromGitSettingsProvider.cs" />
      <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Settings\SettingsProviderUtils.cs" />
      <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Utils\ProcessUtils.cs" />
+     <Compile Include="Assets\NotInvited\VersionFromGitLite\Scripts\Editor\Settings\VersionFromGitSettingsProvider.cs" />
+     <Compile Include="Assets\NotInvited\VersionFromGitCore\Scripts\Editor\Settings\VersionFromGitSettings.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -713,9 +713,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{76a80086-0d0b-eecc-50d4-8d6996376689}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{c2cc0d46-f805-cf62-6835-ce48cf120f27}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{b8e705b9-67d7-22e6-538c-509a6931aef7}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{e37cdc30-dbab-8f95-ffda-15e8b3d154c9}</Project>
