@@ -4,4 +4,6 @@
 # But not these files...
 !.gitignore
 !*/.vscode
-!*/Assets/*
+!*/Assets
+!*/Assets/Scenes
+!*/Assets/Scripts
