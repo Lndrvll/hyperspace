@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Engine4;
+using Engine4.Internal;
 
 public class DraggableIn4D : MonoBehaviour
 {
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
-
+    Transform4 transform4 = new Transform4();
 
     void Update()
     {
         moveObject();
-        
     }
 
     public void moveObject()
@@ -37,11 +38,20 @@ public class DraggableIn4D : MonoBehaviour
             float horizontalAxeRotation = Input.GetAxis("Mouse X") * rotationSpeed;
             float verticalAxeRotation = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-            horizontalAxeRotation *= Time.deltaTime;
-            verticalAxeRotation *= Time.deltaTime;
-    
-            // Rotate around our y-axis
-            transform.Rotate(0, horizontalAxeRotation, verticalAxeRotation);
+            horizontalAxeRotation += Time.deltaTime * 10;
+            verticalAxeRotation += Time.deltaTime * 10;
+
+            transform.rotation = Quaternion.Euler(horizontalAxeRotation,verticalAxeRotation,0);
+
+            Vector3 v = transform.rotation.ToEulerAngles();
+
+            Space4 space = new Space4();
+
+            Euler4 euler4 = new Euler4(v, v);
+
+            transform4.Rotate(euler4,space);
+
+             Debug.Log("Transform position from euler4: " + euler4);
         }
 
     }
