@@ -79,8 +79,8 @@ Material:
     - _RoughnessValue: 0.5
     - _SrcBlend: 1
     - _UVSec: 0
-    - _U_Tiling: 1
-    - _V_Tiling: 1
+    - _U_Tiling: 20
+    - _V_Tiling: 20
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
