@@ -1,9 +1,16 @@
 # Ignore everything
 /*
-/Assets/Unity.VisualScripting.Generated
 
 # But not these files...
 !.gitignore
 !/.vscode
-!/Assets
+!/Assets/Animations
+!/Assets/Editor
+!/Assets/Geometry
+!/Assets/Materials
+!/Assets/Plugins
+!/Assets/Scenes
+!/Assets/Scripts
+!/Assets/Skyboxes
+!/Assets/Sounds
 !/README.md
