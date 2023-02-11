@@ -1,5 +1,6 @@
 # Ignore everything
 /*
+/Assets/Unity.VisualScripting.Generated
 
 # But not these files...
 !.gitignore
