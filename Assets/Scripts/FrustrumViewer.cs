@@ -13,7 +13,7 @@ public class FrustrumViewer : MonoBehaviour
     private bool frustrumView = true;
     private void Start() 
     {
-    projectorCustom = viewer.GetComponent<Viewer4>();
+        projectorCustom = viewer.GetComponent<Viewer4>();
     }
 
     
