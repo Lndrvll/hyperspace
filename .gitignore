@@ -3,14 +3,14 @@
 
 # But not these files...
 !.gitignore
-!/.vscode
-!/Assets/Animations
-!/Assets/Editor
-!/Assets/Geometry
-!/Assets/Materials
-!/Assets/Plugins
-!/Assets/Scenes
-!/Assets/Scripts
-!/Assets/Skyboxes
-!/Assets/Sounds
-!/README.md
+!.vscode
+!Assets/Animations
+!Assets/Editor
+!Assets/Geometry
+!Assets/Materials
+!Assets/Plugins
+!Assets/Scenes
+!Assets/Scripts
+!Assets/Skyboxes
+!Assets/Sounds
+!README.md
